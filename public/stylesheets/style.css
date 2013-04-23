@@ -1,0 +1,119 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.c{
+    zoom:1; /*兼容IE6/7的清除浮动*/
+}
+/*兼容标准浏览器*/
+.c:after{
+    content:''; /*具体的值与清除浮动无关，尽可能的节省字符*/
+    clear:both;
+    overflow:hidden;
+    height:0; /*0高度使其不占用布局空间*/
+    display:block; /*设置成块级元素*/
+}
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*waterfall主体部分的宽度*/
+#wrapper,
+#waterfall-wrapper,
+#waterfall {
+    display: inline-block;
+}
+#imgs_container {
+    padding: 10px;
+    display: inline-block;
+}
+#imgs_container ul {
+    width: 230px;
+    margin-left: 13px;
+    top: 0;
+}
+#imgs_container ul li {
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    position: relative;
+    width: 230px;
+}
+#imgs_container ul li .img-wrap {
+    padding: 10px;
+}
+#imgs_container ul li .tag_container {
+    display: inline-block;
+    margin-right: 65px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+#imgs_container img {
+    display: block;
+    width: 210px;
+}
+
+
+
+

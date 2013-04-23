@@ -1,0 +1,34 @@
+/*waterfall主体部分的宽度*/
+#wrapper,
+#waterfall-wrapper,
+#waterfall {
+  display: inline-block;
+}
+#imgs_container {
+  padding: 10px;
+  display: inline-block;
+}
+#imgs_container ul {
+  width: 230px;
+  margin-left: 13px;
+  top: 0;
+}
+#imgs_container ul li {
+  border: 1px solid #DDDDDD;
+  margin-bottom: 10px;
+  position: relative;
+  width: 230px;
+}
+#imgs_container ul li .img-wrap {
+  padding: 10px;
+}
+#imgs_container ul li .tag_container {
+  display: inline-block;
+  margin-right: 65px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+#imgs_container img {
+  display: block;
+  width: 210px;
+}

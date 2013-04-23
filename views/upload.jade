@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  div
+    form(name="uploadForm",method="post", enctype="multipart/form-data", action='/upload')
+      label(for="tags")
+        请上传您的图片：
+      input(type="file", name="displayImage")
+      label(for="tags")
+        请输入标签：
+      input(type="text", name="tags")
+      input(type="submit", name="submit", value="Submit")

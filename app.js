@@ -38,7 +38,9 @@ app.get('/upload',  uploading.show);
 app.post('/upload',  uploading.uploadFile)
 
 app.get('/getImages',results.getInitialImages);
+app.get('/getImages/:tag',results.getInitialImages);
 app.get('/getImages/:columns/:times', results.getRestImages);
+app.get('/getImages/:columns/:times/:tag', results.getRestImages);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -11,16 +11,27 @@ var config = require('../config.js'),
     imagesArr = [],
     loadLines = parseInt(config.linesOneTimeLoad),
     initImagesLen = parseInt(config.initialImages),
-    getImages= function(callback){
+    getImages= function(callback,tag){
         var getImageCallback = function(err, results, fields){
             if(!err){
                 imagesArr = [];
+                imagesArr[tag] = [];
                 results.forEach(function(elem){
                     elem.imgURL =config.imageConfig.urlRoot + elem.imgURL;
-                    imagesArr.push(elem);
+                    if(tag){
+                       if(elem.tags.indexOf(tag)>=0){
+                           imagesArr[tag].push(elem);
+                       }
+                    }else{
+                        imagesArr.push(elem);
+                    }
                 });
             }
-            callback(imagesArr);
+            if(tag){
+                callback(imagesArr[tag]);
+            }else{
+                callback(imagesArr)
+            }
         };
         dbUtil.select('waterfall','','',getImageCallback);
     };
@@ -43,33 +54,41 @@ module.exports ={
         }
     },
     getInitialImages: function(req,res){
+        var tag = req.params.tag;
         getImages(function(images){
             if(images.length<initImagesLen){
                 res.json(images);
             }else{
                 res.json(images.slice(0,initImagesLen));
             }
-        });
+        }, tag);
     },
 
     getRestImages: function(req,res){
         var columns = req.params.columns,
             times =  req.params.times,
+            tag = req.params.tag,
             imageNumbers,
-            startIndex;
+            startIndex,
+            images;
 
         if(!(columns||times)){
             res.json({'exception':'parameter is wrong'});
         }else{
             imageNumbers = columns * loadLines;
             startIndex = initImagesLen + imageNumbers * (times-1);
-            if(startIndex>imagesArr.length){
+            if(tag){
+              images =imagesArr[tag];
+            }else{
+                images = imagesArr;
+            }
+            if(startIndex>images.length){
                 res.json([]);
             }else{
-                if(startIndex + imageNumbers>imagesArr.length){
-                    res.json(imagesArr.slice(startIndex));
+                if(startIndex + imageNumbers>images.length){
+                    res.json(images.slice(startIndex));
                 }else{
-                    res.json(imagesArr.slice(startIndex,startIndex+imageNumbers));
+                    res.json(images.slice(startIndex,startIndex+imageNumbers));
                 }
             }
         }

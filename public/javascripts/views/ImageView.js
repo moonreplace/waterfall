@@ -13,7 +13,7 @@ define(['text!templates/image.htm'], function (imageTemplate) {
 
        render: function(){
            this.$el.html(this.template(this.model.attributes));
-           return this;
+           return this.$el;
        }
    });
 

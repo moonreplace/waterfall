@@ -1,9 +1,8 @@
 define(['models/images','views/MainView'], function (ImageCollection,MainView) {
     var IndexRouter = Backbone.Router.extend({
         currentView: null,
-
         routes: {
-            'index': 'index'
+            '': 'index'
         },
 
         changeView: function (view) {
@@ -17,13 +16,17 @@ define(['models/images','views/MainView'], function (ImageCollection,MainView) {
         index: function () {
             var that = this,
                 requestTimes = 1,
-                mainView;
+                mainView,
+                tag='',
+                imageCollection = new ImageCollection(),
+                url = '/getImages/',
+                mainView = new MainView({collection:imageCollection});
 
-            var imageCollection = new ImageCollection();
             imageCollection.fetch();
             //当发生初始化，或者重置collection的时候发生下面的事件
             imageCollection.on('reset', function(){
-                mainView = new MainView({collection:imageCollection});
+                requestTimes = 1;
+                $(window).bind('scroll',debounce(scrollFn,100));
                 that.changeView(mainView);
             });
             imageCollection.on('add', function(model){
@@ -43,19 +46,27 @@ define(['models/images','views/MainView'], function (ImageCollection,MainView) {
                 }
             }
             //waterFall主程序
-            var scrollFn= function(){
+            function scrollFn(){
                 var $doc = $(document),
                     docHeight = $doc.height(),
                     docTop = $doc.scrollTop(),
-                    winHeight = $(window).height();
+                    winHeight = $(window).height(),
+                    subUrl = '/getImages/'+mainView.getCount()+'/'+ requestTimes,
+                    $cur = $(".current");
+
 
                 // 拖动到最后一行图片时
                 if (docHeight - docTop < winHeight +200) {
-                    $.getJSON('/getImages/'+mainView.getCount()+'/'+ requestTimes,function(response){
+                    if($cur.hasClass('all')){
+                        tag='';
+                    }else{
+                        tag = "/"+$cur.text();
+                    }
+                    $.getJSON(subUrl+tag,function(response){
                         imageCollection.add(response);
                         requestTimes++;
                         if(response.length){
-                         $(window).bind('scroll',scrollFn);
+                            $(window).bind('scroll',debounce(scrollFn,100));
                         }
                     });
 
@@ -63,10 +74,9 @@ define(['models/images','views/MainView'], function (ImageCollection,MainView) {
                 }
             };
 
-            $(window).bind('scroll',debounce(scrollFn,100));
-            $(window).resize(function(){
+            /*$(window).resize(function(){
                 mainView.reRender();
-            });
+            });  */
         }
     });
 

@@ -4,6 +4,10 @@
     <list default="true" id="667e76d2-39e1-4bb2-964e-af0e6fd8af39" name="Default" comment="" />
     <ignored path="ApplyBD.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/TagView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366782288348" ignored="false" />
+    <file path="/ImageView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366773392900" ignored="false" />
+    <file path="/LinkView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366773244460" ignored="false" />
+    <file path="/Tag.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366766469419" ignored="false" />
     <file path="/upload.jade" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366678475230" ignored="false" />
     <file path="/a.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366678576504" ignored="false" />
     <file path="/a.coffee" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366678578391" ignored="false" />
@@ -11,13 +15,13 @@
     <file path="/a.html" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366678581168" ignored="false" />
     <file path="/images.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366679055501" ignored="false" />
     <file path="/router.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366713404657" ignored="false" />
-    <file path="/listView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366682804667" ignored="false" />
-    <file path="/MainView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366713257773" ignored="false" />
+    <file path="/listView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366781114254" ignored="false" />
+    <file path="/MainView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366783152316" ignored="false" />
     <file path="/style.less" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366688089337" ignored="false" />
     <file path="/style.css" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366682337531" ignored="false" />
     <file path="/index.jade" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366683243524" ignored="false" />
     <file path="/image.htm" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366684168656" ignored="false" />
-    <file path="/ItemView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366712686562" ignored="false" />
+    <file path="/ItemView.js" changelist="667e76d2-39e1-4bb2-964e-af0e6fd8af39" time="1366773286954" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +41,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/router.js">
+      <file leaf-file-name="TagView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/views/TagView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="77" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.5467626">
+            <state line="29" column="41" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/views/MainView.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="31" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0">
+            <state line="20" column="15" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.28485757">
               <folding />
             </state>
           </provider>
@@ -65,22 +78,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Util/updateCachedImages.js" />
-        <option value="$PROJECT_DIR$/Util/cachedImages.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/getImages.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/models/images.js" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
-        <option value="$PROJECT_DIR$/public/javascripts/templates/image.htm" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.min.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.less" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="F:/Personal/code/less/hr.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/views/listView.js" />
         <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/routes/getImages.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/Tag.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/templates/tags.htm.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/LinkView.js" />
         <option value="$PROJECT_DIR$/public/javascripts/views/ItemView.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/ImageView.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/listView.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/templates/tags.htm" />
+        <option value="$PROJECT_DIR$/public/javascripts/views/TagView.js" />
         <option value="$PROJECT_DIR$/public/javascripts/views/MainView.js" />
         <option value="$PROJECT_DIR$/public/javascripts/router.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -202,25 +215,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApplyBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApplyBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -277,6 +272,36 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApplyBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApplyBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -295,18 +320,20 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Jade" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="E:/code/main/front_web/reject&amp;exchange_goods" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
       <option name="filePath" />
-      <option name="scope" value="METHOD" />
+      <option name="scope" value="ALL" />
       <option name="testName" />
       <method />
     </configuration>
@@ -379,13 +406,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15726063" sideWeight="0.9972184" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20101458" sideWeight="0.9972184" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -474,116 +501,92 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/ImageView.js">
+    <entry file="file://$PROJECT_DIR$/Util/mysql.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCases/initWaterFallTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="997" selection-end="1023" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="18" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+    <entry file="file://$PROJECT_DIR$/TestCases/initWaterFallTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="26" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util/generateRandom.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/templates/image.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
+        <state line="9" column="14" selection-start="227" selection-end="227" vertical-scroll-proportion="0.25637183" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util/mysql.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/ImageView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getImages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/views/listView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="19" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/views/ItemView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="3" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/listView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/boot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="3" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/templates/tags.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="34" selection-start="347" selection-end="347" vertical-scroll-proportion="-5.428571" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/models/images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="289" selection-end="298" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/views/MainView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="31" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0">
+        <state line="71" column="29" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="77" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.5467626">
+        <state line="80" column="28" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/views/TagView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="41" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="15" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.28485757">
           <folding />
         </state>
       </provider>

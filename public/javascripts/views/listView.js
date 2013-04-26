@@ -13,8 +13,8 @@ define(['views/ItemView'], function (ItemView) {
 
         append: function () {
             var item = new ItemView({model: this.model});
-            this.$el.append(item.render().$el);
-            return this;
+            this.$el.append(item.render());
+            return this.$el;
         }
     });
 

@@ -1,9 +1,8 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "apply_BD",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "3.2.0",

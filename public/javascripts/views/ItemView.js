@@ -4,9 +4,8 @@ define(['views/ImageView'], function (ImageView) {
 
         render: function () {
             var image = new ImageView({model: this.model});
-            this.$el.html(image.render().$el);
-            this.$el.fadeIn(100);
-            return this;
+            this.$el.html(image.render());
+            return this.$el;
         }
     });
 

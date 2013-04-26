@@ -5,18 +5,24 @@
  * Time: 下午8:05
  * To change this template use File | Settings | File Templates.
  */
-define(['views/ListView'], function (ListView) {
+define(['views/TagView','views/ListView'], function (TagView,ListView) {
     var MainView = Backbone.View.extend({
         el:'#imgs_container',
         listViews: [],
         getCount: function(){
             return Math.floor(this.calcWidth()/243);
         },
-        initialize: function(){
+        initializeListViews: function(){
             var count = this.getCount();
             for(var i=0;i<count;i++){
                 this.listViews.push(new ListView());
             }
+        },
+        initialize: function(){
+            var tagView = new TagView();
+            tagView.parentContainer = this;
+            this.$el.append(tagView.render());
+            this.initializeListViews();
         },
         //计算整个列的宽度，来确定我们应该有多少个数
         calcWidth: function(){
@@ -27,7 +33,11 @@ define(['views/ListView'], function (ListView) {
         /*比较各个ul的高度，然后选出最小的那个把他们加入到其中*/
         sort:function(listViews){
             listViews.sort(function(a, b) {
-                return   a.$el.height()> b.$el.height();
+               if( a.$el.height()> b.$el.height()){
+                   return 1;
+               }else {
+                   return -1;
+               }
             });
         },
 
@@ -55,9 +65,8 @@ define(['views/ListView'], function (ListView) {
         },
         reRender: function(){
            this.listViews=[];
-            this.$el.empty();
-           this.initialize();
-           this.render();
+           this.$el.find('ul').remove();
+           this.initializeListViews();
         }
     });
 
